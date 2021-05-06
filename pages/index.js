@@ -6,8 +6,8 @@ const Home = (props) => {
   return (
     <div>
       <Header {...props} />
-      <div id='Container'>
-        <div id='Main'>
+      <div className='container'>
+        <div className='main'>
           <header className='header'>
             <h1>Marcelo Glacial</h1>
           </header>

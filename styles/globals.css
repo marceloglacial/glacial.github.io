@@ -22,7 +22,7 @@ html {
   padding: 0;
 }
 
-#Container {
+.container {
   background: url(../public/images/background.jpeg) no-repeat center top;
   background-size: cover;
   width: 100%;
@@ -32,7 +32,7 @@ html {
   justify-content: flex-end;
 }
 
-#Main {
+.main {
   background: #ea4342;
   padding: 3rem;
   margin: 3rem;
@@ -74,7 +74,7 @@ ul {
 }
 
 @media (max-width: 1120px) {
-  #Main {
+  .main {
     max-width: 400px;
   }
 
@@ -86,10 +86,10 @@ ul {
 }
 
 @media (max-width: 750px) {
-  #Container {
+  .container {
     align-items: center;
   }
-  #Main {
+  .main {
     max-width: 200px;
     margin: 20px;
     padding: 20px;
@@ -104,10 +104,10 @@ ul {
   .skills li {
     font-size: 20px;
   }
-  #Main .social li {
+  .main .social li {
     margin-left: 0px;
   }
-  #Main .social li a {
+  .main .social li a {
     width: 35px;
     height: 35px;
     margin-left: 5px;
@@ -115,7 +115,7 @@ ul {
 }
 
 @media (orientation: landscape) {
-  #Container {
+  .container {
     align-items: center;
   }
 }
