@@ -30,13 +30,18 @@ const Social = (props) => {
       <h2>Where you can find me:</h2>
       <ul className='social__items'>
         {socialLinks.map((item) => (
-          <li key={item.key} className='social__item'>
+          <li key={item.id} className='social__item'>
             <a
               href={item.url}
               title={item.description}
               className='social__link'
             >
-              <Image src={item.icon} width='48' height='48' />
+              <Image
+                src={item.icon}
+                alt={`${item.title} icon`}
+                width='48'
+                height='48'
+              />
             </a>
           </li>
         ))}
