@@ -1,38 +1,15 @@
 {
-  "name": "marcelo-glacial-website",
-  "version": "1.5.0",
-  "description": "Marcelo Glacial Freitas Personal Website",
-  "main": "index.js",
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "build": "gulp build",
-    "dev": "gulp"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marceloglacial/marcelo-glacial-website.git"
-  },
-  "keywords": [
-    "personal",
-    "website",
-    "portfolio"
-  ],
-  "author": "Marcelo Glacial Freitas",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marceloglacial/marcelo-glacial-website/issues"
-  },
-  "homepage": "https://github.com/marceloglacial/marcelo-glacial-website#readme",
-  "devDependencies": {
-    "browser-sync": "latest",
-    "del": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-htmlmin": "latest",
-    "gulp-smushit": "latest",
-    "gulp-uglify": "latest",
-    "pump": "latest"
+  "dependencies": {
+    "next": "10.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }

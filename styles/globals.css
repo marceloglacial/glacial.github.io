@@ -5,6 +5,7 @@ Starts: 18/09/2017
 */
 
 /* General and Reset ----- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
 
 * {
   padding: 0;
@@ -20,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 html {
   width: 100%;
   height: 100%;
@@ -28,7 +30,7 @@ html {
 }
 
 #Container {
-  background: url(../img/background.png) no-repeat center top;
+  background: url(../public/images/background.png) no-repeat center top;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -39,73 +41,46 @@ html {
 
 #Main {
   background: #ea4342;
-  padding: 50px;
-  margin: 50px;
-  max-width: 500px;
+  padding: 3rem;
+  margin: 3rem;
+  max-width: 32rem;
   text-align: right;
 }
 
 /* Header ---- */
 h1 {
   font-weight: 700;
-  font-size: 120px;
+  font-size: 7.5rem;
   letter-spacing: -13px;
-  line-height: 89px;
+  line-height: 5.5rem;
 }
+
 h2 {
   display: none;
 }
+
 ul {
   list-style: none;
 }
 
 /* Skills ---- */
-section.skills {
+.skills {
   font-weight: 200;
-  font-size: 27px;
+  font-size: 1.7rem;
   letter-spacing: -2px;
-  line-height: 22px;
-  padding-top: 15px;
+  line-height: 1.5rem;
   display: inline-block;
+  padding: 1rem 0;
 }
 
 /* Social ---- */
-#Main .social li {
-  display: inline-block;
-  margin-left: 10px;
+.social__items {
+  display: flex;
+  justify-content: flex-end;
 }
-#Main .social li:first-child {
-  margin: 0;
-}
-#Main .social li a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  font-size: 0;
-  background-color: white;
-  border-radius: 100%;
-  transition: all 0.3s ease-in-out;
-}
-#Main .social li a:hover {
-  opacity: 0.5;
-}
-li.linkedin a {
-  background: url(../img/social-linkedin.png);
-  background-size: contain;
-}
-li.behance a {
-  background: url(../img/social-behance.png);
-  background-size: contain;
-}
-li.github a {
-  background: url(../img/social-github.png);
-  background-size: contain;
-}
-li.codepen a {
-  background: url(../img/social-codepen.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 60%;
+
+.social__item {
+  margin-left: 0.75rem;
 }
 
 /* Mobile - Tablets  */
@@ -113,6 +88,7 @@ li.codepen a {
   #Main {
     max-width: 400px;
   }
+
   h1 {
     font-size: 100px;
     line-height: 74px;
