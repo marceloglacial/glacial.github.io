@@ -1,3 +1,5 @@
+import styles from './Skills.module.scss';
+
 const Skills = (props) => {
   const skills = [
     {
@@ -7,7 +9,7 @@ const Skills = (props) => {
   ];
 
   return (
-    <section className='skills'>
+    <section className={styles.skills}>
       <ul>
         {skills.map((skill) => (
           <li key={skill.id}>{skill.title}</li>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import styles from './Social.module.scss';
 
 const Social = (props) => {
   const socialLinks = [
@@ -26,15 +27,15 @@ const Social = (props) => {
   ];
 
   return (
-    <section className='social'>
+    <section className={styles.social}>
       <h2>Where you can find me:</h2>
-      <ul className='social__items'>
+      <ul className={styles.socialItems}>
         {socialLinks.map((item) => (
-          <li key={item.id} className='social__item'>
+          <li key={item.id} className={styles.socialItem}>
             <a
               href={item.url}
               title={item.description}
-              className='social__link'
+              className={styles.socialIcon}
             >
               <Image
                 src={item.icon}

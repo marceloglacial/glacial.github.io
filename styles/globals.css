@@ -55,24 +55,6 @@ ul {
   list-style: none;
 }
 
-.skills {
-  font-weight: 200;
-  font-size: 1.7rem;
-  letter-spacing: -2px;
-  line-height: 1.5rem;
-  display: inline-block;
-  padding: 1rem 0;
-}
-
-.social__items {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.social__item {
-  margin-left: 0.75rem;
-}
-
 @media (max-width: 1120px) {
   .main {
     max-width: 400px;
@@ -100,17 +82,6 @@ ul {
     letter-spacing: -4px;
     text-align: right;
     float: right;
-  }
-  .skills li {
-    font-size: 20px;
-  }
-  .main .social li {
-    margin-left: 0px;
-  }
-  .main .social li a {
-    width: 35px;
-    height: 35px;
-    margin-left: 5px;
   }
 }
 
